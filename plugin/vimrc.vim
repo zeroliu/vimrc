@@ -1,6 +1,8 @@
 " Basic settings ----{{{
 syntax on
 
+scriptencoding utf-8
+set encoding=utf-8
 set nocompatible
 set t_Co=256
 set history=1000
