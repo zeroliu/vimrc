@@ -48,10 +48,12 @@ set noswapfile
 set hlsearch
 
 " Enable persistent undo.
-set undofile
-set undodir=~/.vim/undo
-set undolevels=1000
-set undoreload=10000
+if exists("&undofile")
+  set undofile
+  set undodir=~/.vim/undo
+  set undolevels=1000
+  set undoreload=10000
+endif
 
 let mapleader=','
 
